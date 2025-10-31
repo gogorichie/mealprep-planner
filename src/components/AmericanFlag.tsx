@@ -1,3 +1,9 @@
+/**
+ * AmericanFlag component
+ * 
+ * Renders an SVG representation of the American flag with accurate colors and 50 stars.
+ * Designed to be displayed as a decorative element in the bottom right corner of the application.
+ */
 export function AmericanFlag() {
   return (
     <svg
@@ -25,7 +31,7 @@ export function AmericanFlag() {
       {/* Blue canton */}
       <rect width="24" height="17.22" fill="#3C3B6E" />
       
-      {/* White stars - simplified 5x6 pattern */}
+      {/* White stars - 7 rows alternating between 6 and 5 stars (50 total) */}
       <g fill="#FFFFFF">
         {/* Row 1 - 6 stars */}
         <circle cx="2.4" cy="1.5" r="0.8" />
@@ -79,6 +85,21 @@ export function AmericanFlag() {
         <circle cx="13.2" cy="16.5" r="0.8" />
         <circle cx="16.8" cy="16.5" r="0.8" />
         <circle cx="20.4" cy="16.5" r="0.8" />
+        
+        {/* Row 8 - 5 stars */}
+        <circle cx="4.2" cy="19" r="0.8" />
+        <circle cx="7.8" cy="19" r="0.8" />
+        <circle cx="11.4" cy="19" r="0.8" />
+        <circle cx="15" cy="19" r="0.8" />
+        <circle cx="18.6" cy="19" r="0.8" />
+        
+        {/* Row 9 - 6 stars */}
+        <circle cx="2.4" cy="21.5" r="0.8" />
+        <circle cx="6" cy="21.5" r="0.8" />
+        <circle cx="9.6" cy="21.5" r="0.8" />
+        <circle cx="13.2" cy="21.5" r="0.8" />
+        <circle cx="16.8" cy="21.5" r="0.8" />
+        <circle cx="20.4" cy="21.5" r="0.8" />
       </g>
     </svg>
   );
