@@ -8,6 +8,7 @@ import { RecipeDialog } from '@/components/RecipeDialog';
 import { MealPlanView } from '@/components/MealPlanView';
 import { RecipeLibraryView } from '@/components/RecipeLibraryView';
 import { ShoppingListView } from '@/components/ShoppingListView';
+import { AmericanFlag } from '@/components/AmericanFlag';
 import { Toaster } from '@/components/ui/sonner';
 import { toast } from 'sonner';
 
@@ -176,6 +177,11 @@ function App() {
       />
 
       <Toaster />
+      
+      {/* American Flag in bottom right corner */}
+      <div className="fixed bottom-4 right-4 z-50">
+        <AmericanFlag />
+      </div>
     </div>
   );
 }
